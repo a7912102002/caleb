@@ -6,7 +6,7 @@ Vue.component('vue-header',{
                 </router-link>`+
                 '<div class="col">'+
                     `<div class="site-search">
-                        <el-input class="input-with-select" v-model="chil_searchinput" placeholder="搜尋">
+                        <el-input class="input-with-select" v-model="chil_searchinput" placeholder="搜尋" clearable>
                             <el-button slot="append" icon="el-icon-search" @click="chil_click"></el-button>
                         </el-input>
                     </div>`+
@@ -22,7 +22,7 @@ Vue.component('vue-header',{
             `<transition name="fixed-bottom" mode="out-in" appear>
                 <div class="search-box" v-show="mosearch">
                     <div class="search-box-in">
-                        <el-input class="input-with-select" v-model="chil_searchinput" placeholder="搜尋">
+                        <el-input class="input-with-select" v-model="chil_searchinput" placeholder="搜尋" clearable>
                             <el-button slot="append" icon="el-icon-search" @click="chil_click"></el-button>
                         </el-input>
                     </div>
