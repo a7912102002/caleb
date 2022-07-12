@@ -1,0 +1,85 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/display.css">
+	<!--↓scrollbar套件 css↓-->
+	<!-- <link rel="stylesheet" href="js/custom-scrollbar/jquery.mCustomScrollbar.css"> -->
+	<!--↓本頁 css↓-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/_base.css?v=1.4">
+	<title>米洛網站後台管理</title>
+</head>
+<style>
+    .jr-test{
+      background-color:#667afa;
+      opacity: .8;
+	}
+	[v-cloak] {
+		opacity: 0;
+	}
+	/*換頁效果*/
+	.page-enter-active{
+		transition: opacity .5s;
+	}
+	.page-leave-active{
+		transition: opacity .2s;
+	}
+	.page-enter, .page-leave-to/* .fade-leave-active below version 2.1.8 */ {
+		opacity: 0;
+	}	
+</style>
+<body>
+	<div class="wrapper">
+		<div id="app" v-loading="loading" v-cloak>
+			<!-- <vue-header ref="hearderObj"></vue-header> -->
+			<main class="site-main">
+				<!-- <el-scrollbar id="scroll-main" wrap-class="scroll-main" view-class="scroll-mainin" :native="false"> -->
+					<transition name="page" mode="out-in">
+						<router-view></router-view>
+					</transition>
+					<footer id="footer" class="site-footer">
+						<!-- <div class="copyright">2019@miracle-All rights reserved. Copyright by 米洛科技網頁設計</div> -->
+					</footer>
+				<!-- </el-scrollbar> -->
+			</main>
+		</div>
+	</div>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-router/dist/vue-router.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<!--↓scrollbar套件 Js↓-->
+<script src="js/tools/header.js?v=1.4"></script>
+<script src="product_list.js?v=1.4"></script>
+<script src="play_list.js?v=1.4"></script>
+
+
+<script>
+	const routes =[
+		// {path:'',component:index_page},
+		{path:'/',component:video_list, props: (route) => ({})},
+		{path:'/playlist',component:play_list, props: (route) => ({})},
+	];
+	const router = new VueRouter({
+		routes: routes
+	})
+	
+	const app = new Vue({
+		router,
+		data: function() {
+			return {
+				loading:false,
+			}
+		},
+		methods:{
+		},
+		watch:{
+		},
+		mounted:function(){
+		}
+	}).$mount('#app')
+</script>

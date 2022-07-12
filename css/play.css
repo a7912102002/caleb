@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+/*圖片列表*/
+/* .wrapper {
+  background-color: #000;
+} */
+.list-data {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.list-data a{
+  cursor: pointer;
+}
+.list-data ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.list-data .list-con > li .item-in{
+  width: 100%;
+  min-height: 40px;
+  transition: all .1s ease-in-out;
+  display: flex;
+  flex-wrap: nowrap;/*不換行*/
+  justify-content: space-around;/*水平置左置右 flex-start | flex-end | center | space-between | space-around;*/
+  align-content: center;/*垂直置上置下 flex-start | flex-end | center | space-between | space-around | stretch*/
+  align-items: center;/*子垂直置上置下 flex-start | flex-end | center | space-between | space-around | stretch*/
+}
+.list-data .list-con{
+  border-bottom: 1px solid #edeeef;
+}
+.list-data .list-con > li{
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+.list-data .list-con > li:nth-child(even){
+  background: #fbfbfc;
+}
+.list-data .list-con > li .item-in > div{
+  padding: 25px 15px;
+}
+.list-data .id    { max-width: 60px; min-width: 60px; width: 100%; }
+.list-data .row{
+  max-width: calc(100% - 140px);
+  width: 100%;
+}
+.list-data .pic   { max-width: 240px; width: 100%; }
+.list-data .title { padding-left: 35px; }
+.list-data .list-con .ctrl button,
+.list-data .list-con .ctrl a{
+  font-size: 22px;
+  width: 50px;
+}
+.list-data .list-con .title,
+.list-data .list-con .ctrl{
+  text-align: left;
+}
+.list-data .pic .icon-box {
+  position: absolute;
+  border-radius: 2px;
+  bottom: 3px;
+  right: 5px;
+  background: #2e2e2e;
+  color: #fff;
+  padding: 0 4px;
+}
+.list-data .pic a{
+  position: relative;
+  display: block;
+}
+.list-data .title a{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;/*指定行數...取代*/
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+  font-size: 16px;
+  position: relative;
+  max-height: 67px;
+}
+.list-data .authorname a{
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  margin-top: 8px;
+  letter-spacing: 0;
+}
+
+
+
+@media (max-width: 1030px){
+}
+
+@media (max-width: 780px){
+  .list-data .pic   { max-width: 160px; }
+  .list-data .title { padding-left: 20px; }
+}
+
+@media (max-width: 530px){
+  .list-data .title a { font-size: 15px; }
+}
