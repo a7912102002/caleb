@@ -14,7 +14,7 @@
 
 ![情境圖](https://a7912102002.github.io/caleb/readme_img/row1.jpg "情境圖")
 
-```程式類型
+```html
 <div class="row">
   <div class="col-auto"></div>
   <div class="col"></div>
@@ -56,7 +56,7 @@ flex 垂直排版
 
 flex 順序調換
 
-```程式類型
+```css
 .order-first {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
@@ -82,7 +82,7 @@ flex 順序調換
 
 padding 微調
 
-```程式類型
+```css
   .p-0 {
     padding: 0 !important;
   }
@@ -102,7 +102,7 @@ padding 微調
 ```
 margin 微調
 
-```程式類型
+```css
 .m-0{
   margin: 0 !important;
 }
