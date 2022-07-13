@@ -9,12 +9,22 @@
 
 ![情境圖](https://a7912102002.github.io/caleb/readme_img/row1.jpg "情境圖")
 
-
-
 ```程式類型
 <div class="row">
 <div class="col-auto"></div>
 <div class="col"></div>
 <div class="col-auto"></div>
+</div>
+```
+
+利用.row、.col 等分排版
+
+![情境圖](https://a7912102002.github.io/caleb/readme_img/row2.jpg "情境圖")
+
+```程式類型
+<div class="row">
+<div class="col"></div>
+<div class="col"></div>
+<div class="col"></div>
 </div>
 ```
