@@ -11,9 +11,9 @@
 
 ```程式類型
 <div class="row">
-<div class="col-auto"></div>
-<div class="col"></div>
-<div class="col-auto"></div>
+  <div class="col-auto"></div>
+  <div class="col"></div>
+  <div class="col-auto"></div>
 </div>
 ```
 
@@ -23,8 +23,8 @@
 
 ```程式類型
 <div class="row">
-<div class="col"></div>
-<div class="col"></div>
-<div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
 </div>
 ```
