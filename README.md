@@ -7,7 +7,9 @@
 ## 快速排版方式
 利用.row、.col、.col-auto 排版
 
-![情境圖](http://localhost/a7912102002.github.io/caleb/caleb/readme_img/row1.jpg "情境圖")
+![情境圖](https://a7912102002.github.io/caleb/readme_img/row1.jpg "情境圖")
+
+
 
 ```程式類型
 <div class="row">
