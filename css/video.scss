@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+body {
+  background-color: #f2f2f2;
+}
+
+.list-img {
+  padding: 20px 0;
+  a {
+    cursor: pointer;
+  }
+  li {
+    width: calc(100% / 4);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .list-title {
+    display: none;
+  }
+  .list-con {
+    max-width: 1506px;
+    margin: 0 auto;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    .id {
+      display: none;
+    }
+  }
+  .list-con>li {
+    padding: 0 8px;
+    .item-in {
+      max-width: 360px;
+      margin: 0 auto;
+      position: relative;
+      transition: all .1s ease-in-out;
+    }
+  }
+  .pic {
+    width: 100%;
+    margin: 0 auto 10px;
+    position: relative;
+    background: #aaa;
+    a {
+      width: 100%;
+      display: block;
+    }
+    img {
+      max-width: 100%;
+    }
+    .icon-box {
+      position: absolute;
+      border-radius: 2px;
+      bottom: 3px;
+      right: 5px;
+      background: #2e2e2e;
+      color: #fff;
+      padding: 0 4px;
+      .ii {
+        margin-left: 10px;
+        padding-top: 8px;
+        display: inline-block;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .title a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /*指定行數...取代*/
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+    font-size: 16px;
+    position: relative;
+    height: 44px;
+  }
+  .authorimg {
+    display: block;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .otherdata {
+    align-items: flex-end;
+    line-height: 1.4em;
+  }
+  .otherdata .col {
+    color: rgb(96, 96, 96);
+  }
+  .see:after {
+    content: '‧';
+    font-size: 28px;
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+    margin: 0 3px;
+  }
+  .lovebtn {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .list-img li {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 780px) {
+  .list-img li {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 530px) {
+  .list-img .list-con {
+    display: block;
+  }
+
+  .list-img li {
+    width: 100%;
+  }
+}
