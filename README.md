@@ -26,7 +26,7 @@
 
 ![情境圖](https://a7912102002.github.io/caleb/readme_img/row2.jpg "情境圖")
 
-```程式類型
+```html
 <div class="row">
   <div class="col"></div>
   <div class="col"></div>
@@ -38,7 +38,7 @@
 
 flex 垂直排版
 
-```程式類型
+```css
 .align-items-start { /*垂直置頂*/
   -webkit-box-align: start !important;
   -ms-flex-align: start !important;
